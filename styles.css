@@ -30,9 +30,7 @@ a {
   text-decoration: none;
 }
 
-header {
-  background-color: #1F2937;
-}
+
 
 img {
   width: 100%;
@@ -68,6 +66,10 @@ img {
   padding: 0 50px 0 0;
 }
 
+.hero-left p {
+  margin: 20px 0;
+}
+
 .hero-right img {
   object-fit: cover;
   object-position: top;
@@ -82,10 +84,52 @@ img {
   padding: 10px;
 }
 
-.hero-left p {
-  margin: 20px 0;
+/*LAYOUT OF RANDOM SECTION*/
+
+.random {
+  text-align: center;
+  overflow: auto;
+  padding: 0 0 100px 0;
 }
 
+.random h2 {
+  margin: 50px 0;
+  overflow: auto;
+}
+
+.random img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  outline: 5px solid #3882F6;
+  border-radius: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 50px; 
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 1 50px;
+}
+
+.card div {
+  height: 160px;
+  width: 160px;
+  margin: 0 0 15px 0;
+}
+
+.card:nth-child(3) img {
+  object-position: bottom;
+}
+
+.card:nth-child(4) img {
+  object-position: center;
+}
 
 /* Utils */
 .btn {
@@ -98,7 +142,8 @@ img {
 }
 
 .btn-outline {
-
+  background-color: transparent;
+  border: 2px solid white;
 }
 
 /* TYPOGRAPHY*/
@@ -123,9 +168,30 @@ html {
   font-size: 24px;
 }
 
+.random h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.random p {
+  color: #292929;
+}
+
 
 /* STATES */
 .header ul a:hover {
   text-decoration: underline; 
   background-color: #314156;
 }
+
+
+/*COLORS OF SECTIONS*/
+
+header {
+  background-color: #1F2937;
+}
+
+.random {
+  background-color: #fff;
+}
+
