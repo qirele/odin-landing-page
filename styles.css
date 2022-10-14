@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1 {
+  line-height: 1;
+}
+
+a {
+  display: block;
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+header {
+  background-color: #1F2937;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* LAYOUT */
+
+.header, .hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 50px 0 100px;
+}
+
+.hero-right, .hero-left {
+  flex: 1 100px;
+}
+
+.hero-right {
+  height: 200px;
+}
+
+.hero-left {
+  padding: 0 50px 0 0;
+}
+
+.hero-right img {
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul a {
+  padding: 10px;
+}
+
+.hero-left p {
+  margin: 20px 0;
+}
+
+
+/* Utils */
+.btn {
+  background-color: #3882F6; 
+  color: white;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.btn-outline {
+
+}
+
+/* TYPOGRAPHY*/
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 900;
+}
+
+.hero p {
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.header b {
+  color: #F9FAF8;
+  font-size: 24px;
+}
+
+
+/* STATES */
+.header ul a:hover {
+  text-decoration: underline; 
+  background-color: #314156;
+}
