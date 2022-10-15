@@ -231,9 +231,10 @@ footer {
 
 
 /* STATES */
-.header ul a:hover {
+.header ul a:hover, button:hover {
   text-decoration: underline; 
-  background-color: #314156;
+  background-color: #3882C0;
+  cursor: pointer;
 }
 
 
