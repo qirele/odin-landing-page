@@ -141,6 +141,26 @@ img {
 }
 
 
+/*ACTION LAYOUT*/
+
+.action .container {
+  margin: 70px auto;
+  padding: 50px 120px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*FOOTER  LAYOUT */
+
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Utils */
 .btn {
   background-color: #3882F6; 
@@ -148,7 +168,7 @@ img {
   padding: 10px 35px;
   border: none;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .btn-outline {
@@ -200,6 +220,15 @@ html {
   text-align: right;
 }
 
+.action .container {
+  background-color: #3882F6;
+  color: white;
+}
+
+footer {
+  color: #E5E7EB;
+}
+
 
 /* STATES */
 .header ul a:hover {
@@ -210,7 +239,7 @@ html {
 
 /*COLORS OF SECTIONS*/
 
-header {
+header, footer{
   background-color: #1F2937;
 }
 
